@@ -29,7 +29,7 @@ var articles = {
                     <p>
                         This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.
                     </p>`
-                    ;
+                    
                     },
      article-two: {
         tital:' Article-two | Sid'
@@ -38,7 +38,7 @@ var articles = {
         content: `  <p>
                         This is content for my second Artical.
                     </p>`
-                    ;
+                    
                     
     },
     article-three: {
@@ -48,7 +48,7 @@ var articles = {
         content: `  <p>
                         This is content for my third Artical.
                     </p>`
-                    ;
+                    
     }
 };
 function creatTemplate(data)
