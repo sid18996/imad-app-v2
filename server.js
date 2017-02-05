@@ -14,7 +14,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 var articles = { 
-    article-one : {
+    'article-one' : {
         tital:' Article-one | Sid',
         heading:'Article One',
         date:'Feb 5 2016',
@@ -31,7 +31,7 @@ var articles = {
                     </p>`
                     
                     },
-     article-two: {
+     'article-two': {
         tital:' Article-two | Sid',
         heading:'Article Two',
         date:'Feb 15 2016',
@@ -41,7 +41,7 @@ var articles = {
                     
                     
     },
-    article-three: {
+    'article-three': {
         tital:' Article-three | Sid',
         heading:'Article Three',
         date:'Feb 10 2016',
