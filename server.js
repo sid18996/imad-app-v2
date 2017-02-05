@@ -15,7 +15,7 @@ app.get('/ui/style.css', function (req, res) {
 
 var articleOne = {
     tital:' Article_one | Sid'
-    headung:'Article One';
+    heading:'Article One';
     date:'Feb 5 2016'
     content: `  <p>
                     This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.
