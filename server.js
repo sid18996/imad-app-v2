@@ -13,23 +13,43 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-var articleOne = {
-    tital:' Article_one | Sid'
-    heading:'Article One';
-    date:'Feb 5 2016'
-    content: `  <p>
-                    This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.
-                </p>
-                
-                <p>
-                    This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.
-                </p>
-                
-                <p>
-                    This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.
-                </p>`
-                ;
-};
+var articles = { 
+    article-one : {
+        tital:' Article-one | Sid'
+        heading:'Article One';
+        date:'Feb 5 2016'
+        content: `  <p>
+                        This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.
+                    </p>
+                    
+                    <p>
+                        This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.
+                    </p>
+                    
+                    <p>
+                        This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.
+                    </p>`
+                    ;
+    },
+    article-two: {
+        tital:' Article-two | Sid'
+        heading:'Article Two';
+        date:'Feb 15 2016'
+        content: `  <p>
+                        This is content for my second Artical.
+                    </p>`
+                    ;
+    },
+    article-three: {
+        tital:' Article-three | Sid'
+        heading:'Article Three';
+        date:'Feb 10 2016'
+        content: `  <p>
+                        This is content for my third Artical.
+                    </p>`
+                    ;
+    }
+}
 function creatTemplate(data)
 {
     var title = data.title;
@@ -69,15 +89,16 @@ function creatTemplate(data)
  }
 
 
-app.get('/article-one',function(req,res){
-     res.send(creatTemplate(articleOne));
+app.get('/:articleName',function(req,res){
+    var articleName=rep.params.articleName;
+     res.send(creatTemplate(articles[articleName]));
 });
-app.get('/article-two',function(req,res){
+/*app.get('/article-two',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
 app.get('/article-three',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-});
+});*/
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
