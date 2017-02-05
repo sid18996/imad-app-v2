@@ -15,9 +15,9 @@ app.get('/ui/style.css', function (req, res) {
 
 var articles = { 
     article-one : {
-        tital:' Article-one | Sid';
-        heading:'Article One';
-        date:'Feb 5 2016';
+        tital:' Article-one | Sid',
+        heading:'Article One',
+        date:'Feb 5 2016',
         content: `  <p>
                         This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.
                     </p>
@@ -28,13 +28,13 @@ var articles = {
                     
                     <p>
                         This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.
-                    </p>`;
+                    </p>`
                     
                     },
      article-two: {
-        tital:' Article-two | Sid'
-        heading:'Article Two'
-        date:'Feb 15 2016'
+        tital:' Article-two | Sid',
+        heading:'Article Two',
+        date:'Feb 15 2016',
         content: `  <p>
                         This is content for my second Artical.
                     </p>`
@@ -42,9 +42,9 @@ var articles = {
                     
     },
     article-three: {
-        tital:' Article-three | Sid'
-        heading:'Article Three';
-        date:'Feb 10 2016'
+        tital:' Article-three | Sid',
+        heading:'Article Three',
+        date:'Feb 10 2016',
         content: `  <p>
                         This is content for my third Artical.
                     </p>`
