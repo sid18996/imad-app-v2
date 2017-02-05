@@ -48,7 +48,7 @@ var articles = {
                     </p>`
                     ;
     }
-}
+};
 function creatTemplate(data)
 {
     var title = data.title;
