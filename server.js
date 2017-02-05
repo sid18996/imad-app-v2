@@ -15,7 +15,7 @@ app.get('/ui/style.css', function (req, res) {
 
 var articles = { 
     'article-one' : {
-        tital:' Article-one | Sid',
+        title:' Article-one | Sid',
         heading:'Article One',
         date:'Feb 5 2016',
         content: `  <p>
@@ -32,7 +32,7 @@ var articles = {
                     
                     },
      'article-two': {
-        tital:' Article-two | Sid',
+        title:' Article-two | Sid',
         heading:'Article Two',
         date:'Feb 15 2016',
         content: `  <p>
@@ -42,7 +42,7 @@ var articles = {
                     
     },
     'article-three': {
-        tital:' Article-three | Sid',
+        title:' Article-three | Sid',
         heading:'Article Three',
         date:'Feb 10 2016',
         content: `  <p>
@@ -61,7 +61,7 @@ function creatTemplate(data)
     var htmlTemplate = `<html>
         <head>
             <title>
-                ${tital}
+                ${title}
             </title>
             <meta name="viewport" content"width=device-width, initial-scale=1" />
             <link href="/ui/style.css" rel="stylesheet" />
