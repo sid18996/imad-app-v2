@@ -29,14 +29,16 @@ var articles = {
                     <p>
                         This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.This is content for my first Artical.
                     </p>`
+                    ;
                     },
-    article-two: {
+     article-two: {
         tital:' Article-two | Sid'
         heading:'Article Two';
         date:'Feb 15 2016'
         content: `  <p>
                         This is content for my second Artical.
                     </p>`
+                    ;
                     
     },
     article-three: {
