@@ -8,7 +8,7 @@ element.innerHTML = 'New Value';
 
 // Move the image
   
-var  
+
 var madi= document.getElementById('madi');
 
 var marginLeft = 0;
