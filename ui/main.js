@@ -8,9 +8,17 @@ element.innerHTML = 'New Value';
 
 // Move the image
   
-  
+var  
 var madi= document.getElementById('madi');
+
+var marginLeft = 0;
+function moveRight(){
+   marginLeft = marginLeft + 10;
+   madi.style.marginLeft = marginLeft + 'px';
+}
+
   madi.onclick= function(){
-    madi.style.marginLeft= '100px';
+      var interval = setInterval(moveRight,100);
+    
   };
     
