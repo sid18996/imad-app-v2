@@ -4,7 +4,7 @@ button.onclick = function(){
      // Creat a request
     var request= new XMLHttpRequest();
 
-    //Make a request
+    //Make a request to counter end point
     request.open('GET', 'htttp://http://sid18996.imad.hasura-app.io/counter', true);
     request.send(null);
 
