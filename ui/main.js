@@ -10,7 +10,7 @@ request.send(null);
 
 //Capture he responce ina variable
 request.onreadystatechange = function(){
-    if(request.readtState == XMLHttprequest,DONE){
+    if(request.readtState == XMLHttprequest.DONE){
     //Take some action
         if(request.status == 200)
         {
