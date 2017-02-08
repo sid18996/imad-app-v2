@@ -1,5 +1,5 @@
 // Counter code 
-var button = document.getElmentById('button');
+var button = document.getElmentById('counter');
 button.onclick = function(){
      // Creat a request
     var request= new XMLHttpRequest();
