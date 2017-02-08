@@ -18,8 +18,6 @@ button.onclick = function(){
         // No do noting  
     };
     
-    
-    
     //Make a request to counter end point
     request.open('GET', 'htttp://http://sid18996.imad.hasura-app.io/counter', true);
     request.send(null);
