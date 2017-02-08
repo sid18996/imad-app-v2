@@ -1,6 +1,6 @@
 // Counter code 
 var button = document.getElmentById('button');
-
+button.onclick = function(){
 // Creat a request
 var request= new XMLHttpRequest();
 
@@ -19,8 +19,9 @@ request.onreadystatechange = function(){
              span.innerHTML = counter.toString();
         }
     }
-    // No do noting     
+    // No do noting  
+};
     
-}
+};
 
 
