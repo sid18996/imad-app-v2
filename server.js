@@ -102,7 +102,7 @@ app.get('/:articleName',function(req,res){
      res.send(creatTemplate(articles[articleName]));
 });
 
-var names[];
+var names =[];
 app.get('/submit-name', function(req,res){
     //Get the name form the request
     var name = req.query.name;
