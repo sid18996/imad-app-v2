@@ -28,7 +28,7 @@ button.onclick = function(){
 //Submit name
 
 var submit = document.getElementById('submit_btn');
-submit.onclick = function(){
+submit.onclick = function(){    
     //Make request to the server
     //Capture all list of name
       // Creat a request
