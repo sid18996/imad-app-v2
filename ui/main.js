@@ -55,8 +55,8 @@ submit.onclick = function(){
         // No do noting  
     };
     
-    //Make a request to counter end point
-    request.open('GET', 'http://sid18996.imad.hasura-app.io/submit-name/name='+ name, true);
+    //Make a request to submit end point
+    request.open('GET', 'http://sid18996.imad.hasura-app.io/submit-name?name='+ name, true);
     request.send(null);
 
     
