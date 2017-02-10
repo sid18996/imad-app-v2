@@ -97,7 +97,7 @@ function creatTemplate(data)
  }
 
 var names =[];
-app.get('/submit-name', function(req,res){
+app.get('/submit-name/', function(req,res){
     //Get the name form the request
     var name = req.query.name;
     names.push(name)  
