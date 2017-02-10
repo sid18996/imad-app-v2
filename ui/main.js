@@ -31,6 +31,9 @@ var submit = document.getElementById('submit_btn');
 submit.onclick = function(){    
     //Make request to the server
     //Capture all list of name
+    var nameInput = document.getElementById('name');
+    var name=nameInput.value;
+
       // Creat a request
     var request= new XMLHttpRequest();
 
@@ -43,7 +46,7 @@ submit.onclick = function(){
                 var names = request.responseText;
                 names=JSON.parse(names);
                 var list = '';
-                for(var i=0;i<name.length;i++){
+                for(var i=0;i<names.length;i++){
                     list += '<li>'+ name[i]+'</li>';
                 }
                 var ul= document.getElementById('namelist');
@@ -54,8 +57,7 @@ submit.onclick = function(){
         // No do noting  
     };
     
-    var nameInput = document.getElementById('name');
-    var name=nameInput.value;
+   
     //Make a request to submit end point
     request.open('GET', 'http://sid18996.imad.hasura-app.io/submit-name?name='+ name, true);
     request.send(null);
