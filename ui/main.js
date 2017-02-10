@@ -26,8 +26,7 @@ button.onclick = function(){
 
 
 //Submit name
-var nameInput = document.getElementById('name');
-var name=nameInput.value;
+
 var submit = document.getElementById('submit_btn');
 submit.onclick = function(){
     //Make request to the server
@@ -55,6 +54,8 @@ submit.onclick = function(){
         // No do noting  
     };
     
+    var nameInput = document.getElementById('name');
+    var name=nameInput.value;
     //Make a request to submit end point
     request.open('GET', 'http://sid18996.imad.hasura-app.io/submit-name?name='+ name, true);
     request.send(null);
