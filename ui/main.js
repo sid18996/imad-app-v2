@@ -6,7 +6,7 @@ button.onclick = function(){
 
     //Capture he responce ina variable
     request.onreadystatechange = function(){
-        if(request.readytState === XMLHttpRequest.DONE){
+        if(request.readyState === XMLHttpRequest.DONE){
         //Take some action
             if(request.status === 200)
             {
