@@ -81,7 +81,7 @@ var articles = {
                     
     }
 };
-function creatTemplate(data)
+function createTemplate(data)
 {
     
     var title = data.title;
@@ -132,7 +132,7 @@ app.get('/submit-name/', function(req,res){
 app.get('/articles/:articleName',function(req,res){
    // var articleName=req.params.articleName;
     
-    pool.query("SELECT * From article WHERE title = '"+ req.params.articleName+"'", function(err, result){
+    pool.query("SELECT * From article WHERE title = '"+ req.params.articleName + "'", function(err, result){
        if(err){
             res.status(500).send(err.toString());
         }else{
@@ -141,8 +141,8 @@ app.get('/articles/:articleName',function(req,res){
             }
             else
             {
-                var articeData = result.row[0];
-                 res.send(creatTemplate(articleData));
+                var articleData = result.row[0];
+                 res.send(createTemplate(articleData));
             }
         }
     });
