@@ -32,7 +32,18 @@ app.get('/hash/:input', function(req,res){
     res.send(hashedString);
 });
  
-
+app.get('/creat-user', functon(req,res){
+    //username,password
+    var salt = crypto.getRandomBytes(128).toString('hex');
+    pool.query('I   nsert into "user"(username,password) VALUES($1,$2)' , [urername, dbString] , function(err ,result){
+         if(err){
+            res.status(500).send(err.toString());
+        }else{
+            res.send('user successfully created: '+username);
+        }
+   
+    });
+});
 
 
 var pool = new Pool(config)
