@@ -3,7 +3,9 @@ var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
 var crypto = require('crypto'); 
- 
+var bodyParser = require('body=-parser');
+
+
 var config = {
     user : 'sid18996',
     database : 'sid18996',
@@ -22,7 +24,7 @@ app.get('/', function (req, res) {
 
 
 function hash(input , salt){
-     //jow do we creat hash?
+     //How do we creat hash?
      var hashed = crypto.pbkdf2Sync(input , salt,10000, 512 ,'sha512');
      return ["pbkf2","10000",salt,hashed.toString('hex')].join('$');
  }
@@ -32,10 +34,10 @@ app.get('/hash/:input', function(req,res){
     res.send(hashedString);
 });
  
-app.get('/creat-user', functon(req,res){
+app.post('/creat-user', functon(req,res){
     //username,password
     var salt = crypto.randomBytes(128).toString('hex');
-    pool.query('I   nsert into "user"(username,password) VALUES($1,$2)' , [urername, dbString] , function(err ,result){
+    pool.query('INSERT INTO "user"(username,password) VALUES($1,$2)' , [urername, dbString] , function(err ,result){
          if(err){
             res.status(500).send(err.toString());
         }else{
